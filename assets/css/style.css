@@ -4,3 +4,79 @@
     box-sizing: border-box;
 }
 
+div.embrulho{
+    background-color: #202124;
+    width: 100%;
+    height: 100vh;
+}
+
+.headerPrincipal{
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headerLogo{
+    color:yellow;
+}
+
+.linksUl{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.link{
+    list-style-type: none;
+}
+
+.link > a {
+    flex-wrap: wrap;
+    color: yellow;
+    font-size: 28px;
+    text-decoration: none;
+    position: relative;
+}
+
+.link > a:hover {
+    transition: ease-in-out;
+    color: red;
+}
+
+.link > a::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: width 1s;
+}
+
+.link > a:hover::after {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 515px){
+
+    .headerPrincipal{
+        flex-direction: column;
+    }
+
+    .link > a{
+        font-size: 25px;
+    }
+
+    .linksUl{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headerLinks{
+        margin-top: 30px;
+    }
+}
