@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html {
@@ -90,13 +91,16 @@ div.embrulho {
     flex-direction: column;
     width: 50%;
     line-height: 30px;
-
-
 }
 
 .conteudoPrincipalZ > img{
     width: 600px;
     height: 500px;
+}
+
+.blocoSectionPrincipalZ > h2{
+    font-size: 32px;
+    margin-bottom: 15px;
 }
 
 .blocoSectionPrincipalZ > h3{
@@ -110,25 +114,49 @@ div.embrulho {
 
 }
 
-.tecnologiasSection{
+.sectionFormacao{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sectionFormacao > h1{
+    width: 100%;
+    text-align: center;
+    font-size: 43px;
+    color: yellow;
+    margin-bottom: 30px;
+}
+
+.textoFormacao{
+    color: rgb(170, 170, 106);
+}
+
+.idiomaFormacao{
+    color: rgb(170, 170, 106);
+}
+
+#tecnologiasSection{
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-top: 40px;
     padding-bottom: 150px;
-
 }
 
 #tecnologiasSection > h1{
-    text-align: center;
     color:yellow;
+    margin-top: 40px;
 }
 
 .tecnologias{
     width: 100%;
+    padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
+    align-content: baseline;
     flex-wrap: wrap;
     gap:20px;
     padding-bottom: 200px;
@@ -139,6 +167,8 @@ div.embrulho {
     width: 300px;
     height: 300px;
     color: azure;
+    border: 1px solid rgb(28, 59, 28);
+    padding: 5px;
 
 }
 
@@ -150,7 +180,7 @@ div.embrulho {
 .tecnologias > .html{
     background-image: url("../images/html5.png");
     background-position: center;
-    background-size: 80%;
+    background-size: 70%;
     background-repeat: no-repeat;
 
 }
@@ -158,31 +188,196 @@ div.embrulho {
 .tecnologias > .css{
     background-image: url("../images/css3.png");
     background-position: center;
-    background-size: 82%;
+    background-size: 74%;
     background-repeat: no-repeat;
 }
 
 .tecnologias > .javascript{
     background-image: url("../images/javascript.png");
     background-position: center;
-    background-size: 180%;
+    background-size: 170%;
     background-repeat: no-repeat;
 }
 
 .tecnologias > .java{
     background-image: url("../images/java.png");
     background-position: center;
-    background-size: 80%;
+    background-size: 75%;
     background-repeat: no-repeat;
 }
 
 .tecnologias > .python{
     background-image: url("../images/python.png");
     background-position: center;
-    background-size: 80%;
+    background-size: 75%;
     background-repeat: no-repeat;
 }
 
+@media screen and (min-width:1600px){
+    .blocoSectionPrincipalZ > h2{
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .blocoSectionPrincipalZ > h3{
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .tecnologias{
+        margin-top: 60px;
+    }
+}
+
+.projetos{
+    width: 100%;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+#projetoTitulo{
+    margin-bottom: 50px;
+}
+
+.projetos > .projeto{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin-bottom: 35px;
+
+}
+
+.projeto > a{
+    color:blue;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.projeto > a:hover{
+    color:red;
+}
+
+.proj1{
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    background-image: url("../images/projetoGerador.png");
+    background-size: 85%;
+    background-position: 50% 50%;
+}
+
+.proj2{
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    background-image: url("../images/timerSimples.png");
+    background-size: 133%;
+    background-position: 50% 50%;
+}
+
+#contatoSection{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap row;
+    margin-top: 400px;
+    padding-bottom: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagemContatoSection{
+    width: 500px;
+    height: 300px;
+}
+
+#contatoSection > h1{
+    width: 100%;
+    text-align: center;
+    color: Yellow;
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+}
+
+.cont > div >  p:nth-of-type(1){
+    color:yellow;
+    font-size: 24px;
+    margin-bottom: 3px;
+}
+
+.cont > div >  p:nth-of-type(2){
+    color:rgb(92, 92, 53);
+    font-size: 21px;
+    margin-bottom: 3px;
+}
+
+.cont > div > a{
+    color:rgb(255, 120, 10);
+}
+
+.cont > p:nth-of-type(2){
+    margin-bottom: 30px;
+}
+
+.cont3{
+    display: none;
+    width: 100%;
+    height: 100%;
+    color: rgb(114, 114, 41);
+    font-size: 24px;
+}
+
+.tituloForm{
+    font-size: 30px;
+    color: yellow;
+    text-align: center;
+}
+
+.blockForm{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.blockForm input{
+    width: 80%;
+    height: 30px;
+    font-size: 18px;
+}
+
+.blockFormTres > textarea{
+    resize: none;
+    width: 390px;
+    height: 100px;
+    font-size: 23px;
+}
+
+.blockFormQuatro{
+    display: flex;
+    align-items: center;
+}
+
+.blockFormQuatro > button{
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.blockFormQuatro > button:hover{
+    cursor: pointer;
+}
+
+.adicionaDisplay{
+    display: flex;
+}
 
 @media screen and (max-width: 966px){
 
@@ -190,6 +385,14 @@ div.embrulho {
         margin-bottom: 50px;
         position: static;
         background-color: transparent;
+    }
+
+
+    .sectionFormacao{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 350px;
     }
 
     .divPrincipalZ{
@@ -214,7 +417,7 @@ div.embrulho {
     }
 
     #tecnologiasSection > h1{
-        margin-top: 200px;
+        margin-top: 250px;
         margin-bottom: 40px;
     }
 
@@ -241,9 +444,32 @@ div.embrulho {
         order:1;
     }
 
+    .sectionFormacao{
+        align-content: baseline;
+        gap: 30px;
+    }
+
+    .imagemContatoSection{
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 570px){
+
+    .sectionFormacao{
+        justify-content: left;
+        margin-left: 30px;
+        gap: 30px;
+    }
 }
 
 @media screen and (max-width: 515px){
+
+    .sectionFormacao{
+        align-content: baseline;
+        gap: 30px;
+    }
 
     #headerPrincipal{
         flex-direction: column;
@@ -260,5 +486,9 @@ div.embrulho {
 
     .headerLinks{
         margin-top: 30px;
+    }
+
+    #tecnologiasSection{
+        margin-top: 90px;
     }
 }
